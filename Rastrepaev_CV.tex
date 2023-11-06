@@ -1,0 +1,288 @@
+% !TEX program = xelatex
+
+%------------------------
+% Resume Template
+% Author : Anubhav Singh
+% Github : https://github.com/xprilion
+% License : MIT
+%------------------------
+
+\documentclass[a4paper,12pt]{extarticle}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+
+\usepackage{fontspec}
+\setmainfont{TeX Gyre Heros}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.530in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1.2in}
+\addtolength{\topmargin}{-.45in}
+\addtolength{\textheight}{1.2in}
+
+\urlstyle{rm}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-10pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+%-------------------------
+% Custom commands
+
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeExperienceItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeExperienceItemTech}[2]{
+  \resumeExperienceItem{#1 \\ \it{Tech: #2}}
+}
+
+\newcommand{\resumeItemWithoutTitle}[1]{
+  \item\small{
+    {\vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{#3} & \textit{#4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+\newcommand{\resumeSubheadingLines}[5]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textbf{#3} & \textit{#4} \\
+      \textit{#5} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-3pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{+3pt}}
+
+%-----------------------------
+%%%%%%  CV STARTS HERE  %%%%%%
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\LARGE Artem Rastrepaev}} & Email: \href{mailto:}{aa.rastrepaev@gmail.com}\\
+  & Mobile:~~~+44 7568 630121 \\
+  & GitHub: \href{https://github.com/rasboy-dev}{rasboy-dev} \\
+\end{tabular*}
+
+% \vspace{-5pt}
+
+%-----------SUMMARY-----------------
+\section{~~Personal Summary}
+
+% IT professional who is passionate about developing innovative programs that are efficient, reliable and user-friendly. Possesses deep knowledge and years of experience in Software and Web Development, Web service technologies, Database design \& Management. Has a strong desire to learn new, competent at different fields what helps to find the best approach, tool or technology to be used for satisfying certain project's requirements. Thrives in a team environment, committed to his team and ready to listen or support and inspire at any moment. Is always able to see the bigger business picture, and not just a projects immediate software requirements.
+
+Professional Software Engineer with a strong background in Computer Science, Software Development \& Math, who has years
+of experience in Microservices, Database Design, Architecture, Testing, DevOps, Agile \& Management,
+and is passionate about developing innovative programs that are efficient,
+reliable and user-focused. Has a strong desire to learn new and is competent in different fields.
+Thrives in a team environment. Is always able to see the bigger business picture, and not just a project's
+immediate software requirements
+% \vspace{-7pt}
+
+% \vspace{-10pt}
+\section{Skills Summary}
+	\resumeSubHeadingListStart
+	\resumeSubItem{Languages}{~~~~Java, Kotlin, Python, Perl, JavaScript/TypeScript, SQL, Bash, Latex}
+\vspace{-3pt}
+  \resumeSubItem{Tools}{~~~~~~~~~~~~~~Spring, Jenkins, Concordion, Docker, Kubernetes, WebRTC, GIT, Databases, \\
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~RESTful API}
+\vspace{-3pt}
+	\resumeSubItem{Platforms}{~~~~~~~Unix, Windows, AWS, Arduino}
+\vspace{-3pt}
+	\resumeSubItem{Soft Skills}{~~~~~~Communication, Team Work, Adaptability, Leadership, Time Management}
+
+\resumeSubHeadingListEnd
+\vspace{-10pt}
+\section{Experience}
+\vspace{5pt}
+
+  \resumeSubHeadingListStart
+    \resumeSubheading{Morgan Stanley}{Glasgow, UK}
+    {Software Engineer (Full-time)}{September 2022 - Present}
+    \resumeItemListStart
+        \resumeExperienceItemTech{Take part in design and development of various components of an internal post-trade system}
+                                 {Java, Spring, Microservices, TDD, CI/CD, Python, Angular, Agile}
+        \resumeExperienceItem{Develop and improve an SFTR reporting system. Reporting accuracy reates are one of the highest in the industry}
+        \resumeExperienceItem{Participated in development of a Returns/Recalls lifecycle software, which includes both green-field development and mainframe decommissioning.
+                              As a result, the number of unmatched fails was reduced by 75\%, and an STP (Straight-Through Processing) rate increased from 0\% to 85\%}
+        \resumeExperienceItemTech{Introduced an Angular component for dynamic file downloading as a part of Hack Day, which is successfully used within the product}
+          {Angular, TypeScript}
+      \resumeItemListEnd
+
+    \vspace{-5pt}
+
+    \resumeSubheading{EasyChair}{Manchester, UK}
+    {Software Engineer (Full-time)}{August 2019 - August 2022}
+    \resumeItemListStart
+        \resumeExperienceItemTech{Designed and developed critical software components for a large-scale web application}
+                                 {Perl, Kotlin, Go, Docker, MariaDB}
+        \resumeExperienceItemTech{Participated in delivering an integrated system for video conferencing in a short time. Implemented service communication functionality and user connectivity.
+                                  Containerized application services and configured AWS instances, including scaling and automatic deployment}
+                                 {Perl, Java, Kotlin, Lua, Docker, AWS, WebRTC, XMPP}
+        \resumeExperienceItemTech{Developed various PDF files generations, including muli-language texts processing}
+                                 {Perl, Latex}
+        \resumeExperienceItemTech{Developed image compoptimization library}
+                                 {Perl, ImageMagick}
+        \resumeExperienceItem{Deployed web services in cloud computing platform (AWS), what saved 50\% of running cost compared to dedicated servers}
+        \resumeExperienceItem{Containerized services with Docker and applications that significantly increased security and sped up the development process, what saved 6 hours of developer's time a week}
+      \resumeItemListEnd
+
+    \vspace{-5pt}
+
+    \resumeSubheading
+    {Digital Clouds}{Novosibirsk, Russia}
+    {Software Developer (Full-time)}{September 2017 -  April 2019}
+    \resumeItemListStart
+        \resumeExperienceItemTech{Full-stack development of e-commerce web services}
+                                 {PHP, JavaScript, HTML, CSS, SQL, Linux}
+
+\newpage
+\vspace{-20pt}
+
+        \resumeExperienceItem{Leaded full cycle of development of 5 successfully launched e-commerce web applications}
+        \resumeExperienceItem{API integrations}
+        \resumeExperienceItem{Managed production UNIX-servers}
+        \resumeExperienceItem{Communicated with customers}
+        \resumeExperienceItem{Leaded interns and new employees who later became a valuable part of the team}
+    \resumeItemListEnd
+
+    \vspace{-5pt}
+
+    \resumeSubheadingLines
+    {Geometric Control Theory Laboratory,}{Novosibirsk, Russia}
+    {Sobolev Institute of Mathematics}{July 2017 -  June 2019}
+    {Laboratory Research Assistant (Part-time)}
+    \resumeItemListStart
+        \resumeExperienceItem{Published an article which was later selected to be published in the Journal of Mathematical Sciences (Springer)}
+        \resumeExperienceItem{Attended scientific conferences and took part in their organization}
+        \resumeExperienceItem{Attended scientific seminars and lectures}
+    \resumeItemListEnd
+
+    \vspace{-5pt}
+
+    \resumeSubheading
+    {Eurostudio}{Novosibirsk, Russia}
+    {Intern (Part-time)}{December 2016 - August 2017}
+    \resumeItemListStart
+        \resumeExperienceItem{Successfully completed practical assignments with a focus on web development}
+        \resumeExperienceItem{Created a web app which used maps API to track and share user's locations as a final project}
+        \resumeExperienceItem{Implemented some new features requested by clients for an actual project that used the company's own web framework. All the code was successfully run in production environment}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------------
+\vspace{-20pt}
+\section{~~Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Novosibirsk State University}{Novosibirsk, Russia}
+      {Bachelor of Mathematics - Department of Mathematical Analysis}{August 2013 - June 2017}
+      % {\scriptsize \textit{ \footnotesize{\newline{}\textbf{Courses:} Operating Systems, Data Structures, Analysis Of Algorithms, Artificial Intelligence, Machine Learning, Networking, Databases}}}
+    \resumeSubHeadingListEnd
+\vspace{-15pt}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Novosibirsk State University}{Novosibirsk, Russia}
+      {Master of Mathematics - Department of Mathematical Analysis}{August 2017 - June 2019}
+      % {\scriptsize \textit{ \footnotesize{\newline{}\textbf{Courses:} Operating Systems, Data Structures, Analysis Of Algorithms, Artificial Intelligence, Machine Learning, Networking, Databases}}}
+    \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\vspace{-10pt}
+\section{Projects}
+\resumeSubHeadingListStart
+\resumeSubItem{Ludum Dare}{Participated in several \href{https://ldjam.com/}{Ludum Dare} events as both solo developer and team member. In the most recent one, we won 2nd place of 2k submissions in Graphics}
+% \vspace{-15pt}
+\resumeSubItem{Unity Summer School - AR Project, STEM Group Mentor}{Mentor and group leader at a STEM summer school for talented school students. The students were developing their own AR mobile apps using Vuforia Engine Library (August '18)}
+\resumeSubItem{Arduino Summer School - IoT Project, STEM Group Mentor}{Mentor and group leader at a STEM summer school for talented school students. The students were designing and developing various IoT projects using Arduino platform (August '17)}
+\resumeSubItem{Arduino IoT Projects}{Smart light alarm, smart light control}
+
+% \resumeSubItem{Vison - multimedia search engine (NLP, Search Engine, Web Crawlers, Multimedia Processing)}{(Work in progress) Research oriented, open source, search engine for bringing reverse multimedia search to small \& mid scale enterprises. Tech: Python, NodeJS, Intel OpenVino Toolkit, Selenium, TensorFlow (October '18)}
+% \vspace{2pt}
+% \resumeSubItem{Reinforcement Learning based Traffic Control System (Reinforcement Learning, Computer Vision)}{AI model to resolve city traffic around 50\%
+% faster. Tech: Python, Alibaba Cloud, Raspberry Pi, Arduino, SUMO \& OpenCV. (August '18)}
+% \vspace{2pt}
+% \resumeSubItem{Panorama from Satellite Imagery using Distributed Computing (Distributed Computing, Image Processing)}{Images clicked using drones, provided by ISRO were stitched together using distributed public compute nodes, effectively bringing down processing time exponentially. Tech: PHP, C++, Java, Python (March '18)}
+% \vspace{2pt}
+% \resumeSubItem{Drag-n-drop machine learning learning environment (Web Development, Machine Learning)}{Scratch like tool for implementing machine learning pipelines along with built in tutorial for each concept. Tech: Python, JavaScript (September '18)}
+% \vspace{2pt}
+% \resumeSubItem{Search Engine and Social Network(Web Development, Web Crawler, Search)}{Created from scratch a social network and a search engine based on the idea of integrating Facebook and Google. The launched website was among top 1000 websites in India during 2012-2013. Tech: PHP, MySQL, HTML, CSS, WebSockets, JavaScript, RSS, XML ( May '12)}
+\resumeSubHeadingListEnd
+
+%-----------PUBLICATIONS-----------------
+\vspace{-10pt}
+\section{Publications}
+\resumeSubHeadingListStart
+\resumeSubItem{Article: Lifting of Homogeneous Vector Fields}{Published in the Journal of Mathematical Sciences \\ (March '21)}
+\resumeSubHeadingListEnd
+\vspace{-10pt}
+
+%-----------Awards-----------------
+\section{Honors and Awards}
+\resumeSubHeadingListStart
+% \resumeSubItem{A second-place award in 55th International Scientific Students Conference ISSC-2017 \\ (March '21)}
+\resumeSubItem{55th International Scientific Students Conference ISSC-2017}{A second-place award (March '17)}
+\resumeSubHeadingListEnd
+
+\vspace{-10pt}
+\section{Volunteer Experience}
+  \resumeSubHeadingListStart
+	\resumeSubheading
+    {Volunteer at Didsbury Park}{Manchester, UK}
+    {Volunteer at local park}{May 2021 - August 2022}
+	\resumeSubheading
+    {STEM Ambassador}{Novosibirsk, Russia}
+    {Novosibirsk State University}{May 2014 - August 2019}
+  \resumeSubheading
+    {STEM Ambassador}{Glasgow, UK}
+    {Morgan Stanley}{May 2023 - Present}
+
+\resumeSubHeadingListEnd
+
+\end{document}
