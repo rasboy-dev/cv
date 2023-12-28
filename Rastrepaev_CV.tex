@@ -61,8 +61,8 @@
   }
 }
 
-\newcommand{\resumeExperienceItemTech}[2]{
-  \resumeExperienceItem{#1 \\ \it{Tech: #2}}
+\newcommand{\resumeExperienceItemStack}[2]{
+  \resumeExperienceItem{#1 \\ \it{Stack: #2}}
 }
 
 \newcommand{\resumeItemWithoutTitle}[1]{
@@ -130,7 +130,7 @@ immediate software requirements
 	\resumeSubItem{Languages}{~~~~Java, Kotlin, Python, Perl, JavaScript/TypeScript, SQL, Bash, Latex}
 \vspace{-3pt}
   \resumeSubItem{Tools}{~~~~~~~~~~~~~~Spring, Jenkins, Concordion, Docker, Kubernetes, WebRTC, GIT, Databases, \\
-  ~~~~~~~~~~~~~~~~~~~~~~~~~~RESTful API, Angular}
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~RESTful API, MQ, Angular}
 \vspace{-3pt}
 	\resumeSubItem{Platforms}{~~~~~~~Unix, Windows, AWS, Arduino}
 \vspace{-3pt}
@@ -145,15 +145,21 @@ immediate software requirements
     \resumeSubheading{Morgan Stanley}{Glasgow, UK}
     {Software Engineer (Full-time)}{September 2022 - Present}
     \resumeItemListStart
-        \resumeExperienceItemTech{Take part in design and development of various components of an internal post-trade system}
-                                 {Java, Spring, Microservices, TDD, CI/CD, Python, Angular, Agile}
-        \resumeExperienceItem{Develop and improve an SFTR reporting system. Reporting accuracy rates are one of the highest in the industry.
-                              The system reports handreds of thousands of trades per day, while each trade has handreds of fields sourced from multiple distributed sources}
+        \resumeExperienceItemStack{Take part in design and development of various components of an internal post-trade system}
+                                  {Java, Spring, Microservices, MQ, TDD, CI/CD, Python, Angular, TypeScript, Agile}
+        \resumeExperienceItem{Develop and improve an SFTR reporting system. The system reports handreds of thousands of trades per day, while each trade has handreds of
+                              fields sourced from multiple distributed sources, and reporting accuracy rates are among the highest in the industry
+                              \vspace{-5pt}
+                              \resumeItemListStart
+                                \resumeExperienceItem{Took ovnership of trade UTI determination service, identified and fixed several bugs, considerably extended it's logic}
+                                \resumeExperienceItem{Redesigned Execution Time determination logic to impprove accuracy, extensibility, and testability}
+                              \resumeItemListEnd
+                              \vspace{-3pt}
+        }
         \resumeExperienceItem{Participated in development of a Returns/Recalls lifecycle software, which included both green-field development and mainframe decommissioning.
-                              As a result, the number of unmatched fails was reduced by 75\%, and an STP (Straight-Through Processing) rate increased from 0\% to 85\%, what
+                              The number of unmatched fails was reduced by 75\%, and Straight-Through Processing rates increased from 0\% to 85\%, what
                               saved several hours of operation desk's time a day}
-        \resumeExperienceItemTech{Introduced an Angular component for dynamic file downloading as a part of Hack Day, which is successfully used within the product}
-          {Angular, TypeScript}
+        \resumeExperienceItem{Introduced an Angular component for dynamic file downloading as a part of Hack Day, which was successfully used within the product}
       \resumeItemListEnd
 
     \vspace{-5pt}
@@ -161,17 +167,16 @@ immediate software requirements
     \resumeSubheading{EasyChair}{Manchester, UK}
     {Software Engineer (Full-time)}{August 2019 - August 2022}
     \resumeItemListStart
-        \resumeExperienceItemTech{Designed and developed critical software components for a large-scale web application}
-                                 {Perl, Kotlin, Go, Docker, MariaDB}
-        \resumeExperienceItemTech{Participated in delivering an integrated system for video conferencing in a short time. Implemented service communication functionality and user connectivity.
+        \resumeExperienceItemStack{Designed and developed critical software components for a large-scale web application}
+                                  {Perl, Kotlin, Go, Docker, MariaDB, LaTeX}
+        \resumeExperienceItemStack{Participated in delivering an integrated system for video conferencing in a 4-month time. Implemented services communication functionality and user connectivity.
                                   Containerized application services and configured AWS instances, including scaling and automatic deployment}
                                  {Perl, Java, Kotlin, Lua, Docker, AWS, WebRTC, XMPP}
-        \resumeExperienceItemTech{Developed various PDF files generations, including muli-language texts processing}
-                                 {Perl, Latex}
-        \resumeExperienceItemTech{Developed image compoptimization library}
-                                 {Perl, ImageMagick}
-        \resumeExperienceItem{Deployed web services in cloud computing platform (AWS), what saved 75\% of running cost compared to dedicated servers}
-        \resumeExperienceItem{Containerized services with Docker and applications that significantly increased security and sped up the development process, what saved 6 hours of developer's time a week}
+        \resumeExperienceItem{Deployed web services in a cloud computing platform (AWS), what saved 75\% of running cost compared to dedicated servers}
+        \resumeExperienceItem{Initiated and implemented containerization of various services and applications with Docker, that significantly increased security and maintainability. It also sped up the development process,
+                              what saved 6 hours of developer's time a week and release time from 4-6 hours to 30 minutes}
+        \resumeExperienceItem{Designed and developed Go HTTP API to execute containerized applications}
+        \resumeExperienceItem{Developed and improved various PDF generation flows, including muli-language text processing}
       \resumeItemListEnd
 
 \newpage
@@ -180,11 +185,10 @@ immediate software requirements
     {Digital Clouds}{Novosibirsk, Russia}
     {Software Developer (Full-time)}{September 2017 -  April 2019}
     \resumeItemListStart
-        \resumeExperienceItemTech{Full-stack development of e-commerce web services}
-                                 {PHP, JavaScript, HTML, CSS, SQL, Linux}
-        \resumeExperienceItem{Leaded full cycle of development of 5 successfully launched e-commerce web applications}
-        \resumeExperienceItem{API integrations}
-        \resumeExperienceItem{Managed production UNIX-servers}
+        \resumeExperienceItemStack{Leaded full cycle of Full-stack development of 5 successfully launched e-commerce web applications}
+                                  {PHP, RESTful API, JavaScript, HTML, CSS, SQL, Linux}
+        \resumeExperienceItem{Developed a service for engine oil recommendations for various types of vehicles}
+        \resumeExperienceItem{Developed an extensive custom personal account functionality arcorging to customer requirements}
         \resumeExperienceItem{Communicated with customers}
         \resumeExperienceItem{Leaded interns and new employees who later became a valuable part of the team}
     \resumeItemListEnd
@@ -196,8 +200,8 @@ immediate software requirements
     {Sobolev Institute of Mathematics}{July 2017 -  June 2019}
     {Laboratory Research Assistant (Part-time)}
     \resumeItemListStart
-        \resumeExperienceItem{Published an article which was later selected to be published in the Journal of Mathematical Sciences (Springer)}
-        \resumeExperienceItem{Attended scientific conferences and took part in their organization}
+        \resumeExperienceItem{Published an article which was selected for publishing in Journal of Mathematical Sciences (Springer)}
+        \resumeExperienceItem{Took part in organization of scientific conferencens and events}
     \resumeItemListEnd
 
     \vspace{-5pt}
@@ -206,8 +210,8 @@ immediate software requirements
     {Eurostudio}{Novosibirsk, Russia}
     {Intern (Part-time)}{December 2016 - August 2017}
     \resumeItemListStart
-        \resumeExperienceItem{Created a web app which used maps API to track and share user's locations as a final project}
-        \resumeExperienceItem{Implemented some new features requested by clients for an actual project that used the company's own web framework. All the code was successfully run in production environment}
+        \resumeExperienceItem{Created a web app which used maps API to track and share user's locations as the final project}
+        \resumeExperienceItem{Added an image uploading option to the company's CMS web framework for displaying on web pages}
     \resumeItemListEnd
 
 \resumeSubHeadingListEnd
@@ -233,19 +237,18 @@ immediate software requirements
 \vspace{-10pt}
 \section{Projects}
 \resumeSubHeadingListStart
-\resumeSubItem{Ludum Dare (Game Jam)}{Participated in several \href{https://ldjam.com/}{Ludum Dare} game jam events as both solo developer and team member. In the most recent one, we won 2nd place of 2k submissions in Graphics}
-% \vspace{-15pt}
-\resumeSubItem{Unity Summer School - AR Project, STEM Group Mentor}{Mentor and group leader at a STEM summer school. The students were developing AR mobile apps using Vuforia Engine Library (August '18)}
-\resumeSubItem{Arduino Summer School - IoT Project, STEM Group Mentor}{Mentor and group leader at a STEM summer school. The students were designing and developing various IoT projects using Arduino platform (August '17)}
-\vspace{-15pt}
-\resumeSubItem{Arduino IoT Projects}{Smart light alarm, smart light control}
+\resumeSubItem{Indie Video Game}{Participated in a Ludum Dare Game Jam where our team won 2nd place in Graphics. Despite having no prior experience in game development or knowledge of the engine,
+                                 I took on the responsibilities of game disign, prototyping and development, which let us create the jam version in 72 hours.
+                                 Currently, we are working towards publishing the game on Steam in 2024 \it{(October '23 - Present)}}
+\resumeSubItem{STEM Summer Schools - STEM Group Mentor}{Mentor and group leader at STEM summer schools. The students were developing AR mobile apps using Vuforia Engine Library and
+                                                        implementing various IoT projects using Arduino platform under my leadership \it{(August '17, '18)}}
 \resumeSubHeadingListEnd
 \vspace{-10pt}
 
 %-----------PUBLICATIONS-----------------
 \section{Publications}
 \resumeSubHeadingListStart
-\resumeSubItem{Article: Lifting of Homogeneous Vector Fields}{Published in the Journal of Mathematical Sciences \\ (March '21)}
+\resumeSubItem{Article: Lifting of Homogeneous Vector Fields}{Published in the Journal of Mathematical Sciences \\ \it{(March '21)}}
 \resumeSubHeadingListEnd
 \vspace{-10pt}
 
@@ -253,7 +256,7 @@ immediate software requirements
 \section{Honors and Awards}
 \resumeSubHeadingListStart
 % \resumeSubItem{A second-place award in 55th International Scientific Students Conference ISSC-2017 \\ (March '21)}
-\resumeSubItem{55th International Scientific Students Conference ISSC-2017}{A second-place award (March '17)}
+\resumeSubItem{55th International Scientific Students Conference ISSC-2017}{A second-place award \it{(March '17)}}
 \resumeSubHeadingListEnd
 
 \vspace{-10pt}
@@ -262,13 +265,11 @@ immediate software requirements
 	\resumeSubheading
     {Volunteer at Didsbury Park}{Manchester, UK}
     {Volunteer at local park}{May 2021 - August 2022}
-	\resumeSubheading
-    {STEM Ambassador}{Novosibirsk, Russia}
-    {Novosibirsk State University}{May 2014 - August 2019}
   \resumeSubheading
-    {STEM Ambassador}{Glasgow, UK}
-    {Morgan Stanley}{May 2023 - Present}
-
+    {STEM Ambassador}{Russia; UK}
+    {Novosibirsk State University, Morgan Stanley}{May 2014 - Present}
 \resumeSubHeadingListEnd
 
 \end{document}
+
+Participated in a Ludum Dare Game Jam where our team won 2nd place in Graphics. Despite having no prior experience in game development or knowledge of the engine, I was responsible for the game disign, prototyping and development, which let us create the jam version in 72 hours. Currently, we are working towards publishing the game on Steam in 2024
